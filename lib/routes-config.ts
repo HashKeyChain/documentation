@@ -74,7 +74,7 @@ export const ROUTES: EachRoute[] = [
     items: [
       { 
         title: "Get help", 
-        href: "https://discord.gg/b8KkHJsW",
+        href: "https://discord.gg/zskSJmtk",
         externalLink: true
       },
       { 
