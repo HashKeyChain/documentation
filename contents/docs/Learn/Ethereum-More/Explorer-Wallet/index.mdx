@@ -22,7 +22,7 @@ Follow these simple steps to start using the HashKey Chain Explorer effectively:
 
 While you can browse the explorer without connecting a wallet, connecting enables additional features:
 
-1. Navigate to [explorer.hsk.xyz](https://explorer.hsk.xyz/)
+1. Navigate to [explorer.hsk.xyz](https://hashkey.blockscout.com/)
 2. Click the "Connect" button in the top-right corner
 3. Select your preferred wallet (MetaMask, WalletConnect, etc.)
 4. Approve the connection request in your wallet
@@ -244,7 +244,7 @@ To interact with HashKey Chain:
    - RPC URL: https://hsk-mainnet.hashkey.com
    - Chain ID: 1719
    - Currency Symbol: HSK
-   - Block Explorer URL: https://explorer.hsk.xyz
+   - Block Explorer URL: https://hashkey.blockscout.com
 
 #### Step 3: Connect Wallet to Explorer
 
@@ -323,7 +323,7 @@ Example API request to get address transactions:
 ```javascript
 async function getAddressTransactions(address) {
   const response = await fetch(
-    `https://explorer.hsk.xyz/api/v2/addresses/${address}/transactions`
+    `https://hashkey.blockscout.com/api/v2/addresses/${address}/transactions`
   );
   return await response.json();
 }
