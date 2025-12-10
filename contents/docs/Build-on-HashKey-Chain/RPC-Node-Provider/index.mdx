@@ -98,7 +98,7 @@ L1_RPC_KIND=standard
 L1_BEACON=
 
 # node libp2p bootnodes dns/ip4
-P2P_STATIC="/dns/hashkey-mainnet-bootnodes.altlayer.network/tcp/31112/p2p/16Uiu2HAm1UX8Lx4XKnHXncKCw5Q4r6jsajKDEukHk9S9NXuroVKY,/dns/hashkey-mainnet-bootnodes.altlayer.network/tcp/31114/p2p/16Uiu2HAm2PzcWR3pgBkCSUC8Co6WsKHhyyxJysQqzeZpHoX2RaAf,/dns/hashkey-mainnet-bootnodes.altlayer.network/tcp/31116/p2p/16Uiu2HAm6s2pY65dcXi8zM4EfD7oCP4o64C6a8XbxwgLU1q6WAUe,/dns/hashkey-mainnet-bootnodes.altlayer.network/tcp/31118/p2p/16Uiu2HAmQEAZhJTPSdrJpH2NqZ5X368XPXGq68XxL1r8wQamdbwQ"
+P2P_STATIC="/dns/testnet-bootnodes.hsk.xyz/tcp/9003/p2p/16Uiu2HAmK91SZeGrr7Tv7hKBJsNcbVjzNtZBKmGzq5hLo5AtSoHa,/dns/testnet-bootnodes.hsk.xyz/tcp/9004/p2p/16Uiu2HAmTJHvcpkC8miMRhHr9ionQtEVMbCGshmU2nv4ir5ZA68j"
 # rollup config file url link
 ROLLUP_CONFIG_URL="https://operator-public.s3.us-west-2.amazonaws.com/hashkeychain/mainnet/rollup.json"
 
@@ -113,8 +113,8 @@ Create a `.env` file with the following content for HashKey Chain Testnet, repla
 GETH_IMAGE=us-docker.pkg.dev/oplabs-tools-artifacts/images/op-geth:v1.101603.1
 # op-l2 geth bootnodes
 GETH_STATICNODES='[
-    "enode://f26759caecdec0ae9d04f523a4ae6a7c562e47f89289f9a520c56f97da9c64cf386441df7f2e992b153a66e8988dcbd3280064db700002e9c14140913004cc52@testnet-bootnodes.hsk.xyz:31289",
-    "enode://72c77ff6d8dac333d283ac2a2522452045bc292d156e4cb4c14d3ef804db77d0c11f7a0bacd507d7eaaa371a7b32cb47369c799620d245630ee137a58d19e893@testnet-bootnodes.hsk.xyz:30109"
+    "enode://0492e74fb10579a3c53a327ee42dc70db35e7e0aebd73793a806afccb86b30acecb8fe9d024e06bb3fd154c678926d884df3ae696c71adcbf1339a5762e19c4d@testnet-bootnodes.hsk.xyz:30303",
+    "enode://dba82c6b384844a00a54ecdfcb34c209ea714072558db80512d4c65e760846d054cf3f58a826cba33b6b410498559b7e41b147dfa487f8cba3d25d2b5bb9e7bc@testnet-bootnodes.hsk.xyz:30304"
 ]'
 # genesis file url link
 GENESIS_URL="https://hashkeychain.s3.ap-southeast-1.amazonaws.com/testnet/genesis.json"

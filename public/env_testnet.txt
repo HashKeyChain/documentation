@@ -8,15 +8,15 @@ L1_RPC=https://ethereum-sepolia-rpc.publicnode.com
 # https://docs.optimism.io/builders/node-operators/tutorials/node-from-docker
 L1_RPC_KIND=standard
 # node libp2p bootnodes
-P2P_STATIC="/dns/testnet-mux2-aws.altlayer.network/tcp/30515/p2p/16Uiu2HAmUSM5U3LBW6DfFRV6g1JHZ5un27XcCTkDB69MzksmyMTh,/dns/testnet-mux2-aws.altlayer.network/tcp/31604/p2p/16Uiu2HAmSTbcZKAk3y11HGdVJuvWQD6de6Y6JJ5Cbx4GqdaQRjt4"
+P2P_STATIC="/dns/testnet-bootnodes.hsk.xyz/tcp/9003/p2p/16Uiu2HAmK91SZeGrr7Tv7hKBJsNcbVjzNtZBKmGzq5hLo5AtSoHa,/dns/testnet-bootnodes.hsk.xyz/tcp/9004/p2p/16Uiu2HAmTJHvcpkC8miMRhHr9ionQtEVMbCGshmU2nv4ir5ZA68j"
 # rollup config file url link
 ROLLUP_CONFIG_URL="https://operator-public.s3.us-west-2.amazonaws.com/hashkeychain/testnet/rollup.json"
 # tx forward endpoint
 SEQUENCER_HTTP=http://hashkeychain-testnet.alt.technology/
 # op-l2 geth bootnodes
 GETH_STATICNODES='[
-    "enode://43b4bce4f2234d735a39224b1dabb4fe17e852a442cfa5eb0e616c070593b87e5c75d25176064ad616224b45b726749ece551e7cecc00405891b38842e5ff29c@testnet-mux2-aws.altlayer.network:30495",
-    "enode://ff7dabb4344bfbd58e04356ef89d3ba5bd9e727257995edd1ac66518feb6090cd1394064fea4404ba6d1698d44f2cdec766bc92568f432a1fee4842769227386@testnet-mux2-aws.altlayer.network:30803"
+    "enode://0492e74fb10579a3c53a327ee42dc70db35e7e0aebd73793a806afccb86b30acecb8fe9d024e06bb3fd154c678926d884df3ae696c71adcbf1339a5762e19c4d@testnet-bootnodes.hsk.xyz:30303",
+    "enode://dba82c6b384844a00a54ecdfcb34c209ea714072558db80512d4c65e760846d054cf3f58a826cba33b6b410498559b7e41b147dfa487f8cba3d25d2b5bb9e7bc@testnet-bootnodes.hsk.xyz:30304"
 ]'
 # genesis file url link
 GENESIS_URL="https://operator-public.s3.us-west-2.amazonaws.com/hashkeychain/testnet/genesis.json"
