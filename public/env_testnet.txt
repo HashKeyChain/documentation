@@ -1,8 +1,8 @@
 # geth image
-GETH_IMAGE=us-docker.pkg.dev/oplabs-tools-artifacts/images/op-geth:v1.101500.1
+GETH_IMAGE=us-docker.pkg.dev/oplabs-tools-artifacts/images/op-geth:v1.101605.0
 # l1 rpc url
 # node image
-NODE_IMAGE=us-docker.pkg.dev/oplabs-tools-artifacts/images/op-node:v1.11.2
+NODE_IMAGE=us-docker.pkg.dev/oplabs-tools-artifacts/images/op-node:v1.16.5
 L1_RPC=https://ethereum-sepolia-rpc.publicnode.com
 # l1 rpc kind(standard/basic/quicknode/alchemy/erigon)
 # https://docs.optimism.io/builders/node-operators/tutorials/node-from-docker
