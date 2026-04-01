@@ -62,17 +62,15 @@ Create a `.env` file with the following content for HashKey Chain Mainnet, repla
 
 ```bash
 # geth image
-GETH_IMAGE=us-docker.pkg.dev/oplabs-tools-artifacts/images/op-geth:v1.101603.1
+GETH_IMAGE=us-docker.pkg.dev/oplabs-tools-artifacts/images/op-geth:v1.101605.0
 # op-l2 geth bootnodes
 GETH_STATICNODES='[
-    "enode://e3d83751cba1f5fd806a73e9701baaa93eb729474eb6c246050e76f9cde32915d4904e1fa12be4196ad7296aba61d4ffebfb7a9c5eeff2b9578e0d7a55cc5ed5@hashkey-mainnet-bootnodes.altlayer.network:31111",
-    "enode://b3714bf5e75760fcbb4de393b75bbcf046be7aa6fb47bd928c4ad6405717a5e67cb01a31dc820ce6b51cfb6c8268ec6c1166fdb2a66f9c92ea67f2fdfdf130fc@hashkey-mainnet-bootnodes.altlayer.network:31113",
-    "enode://6ad0903b679bed251393813042f2452f55ec4e6f120347d412c203072e58bb2e3c1d68247eba25a89b920995bed3b043819d49577a8c1fe4f1c0d762d7d6763a@hashkey-mainnet-bootnodes.altlayer.network:31115",
-    "enode://17162151981152707b855e1e67ab9027dcad7af7a2dbcfa40352c6940f1a977f490b2522986736a8c20327abd5f50afd39f23031b3b103d99c0c03c4449bd172@hashkey-mainnet-bootnodes.altlayer.network:31117",
-
+    "enode://5ecd6d2054a58fa00729b73396044a35e6aceeafe58373d2f26b3f50a3934175fb56f8efa538381430889771613beaabf1177805910bbd34e4b4840320914690@mainnet-bootnodes.hsk.xyz:30615",
+    "enode://bd244da2a066e15f82d4bfb7f2732c5b5bac44cefb36cefef01a4c0e87e72b42004d012c9a294b8402ebf67491777f280ffbcc93a71157921d6d358b19ddac67@mainnet-bootnodes.hsk.xyz:30616",
+    "enode://a5bba6459ac3a075a4a8941478a4ef8d167460191c89632004b17e4b2d7beea52cdc1a2d376f35e996ad44ccac8db25f900700aad6991d015bdc4db072832063@mainnet-bootnodes.hsk.xyz:30617"
 ]'
 # genesis file url link
-GENESIS_URL="https://operator-public.s3.us-west-2.amazonaws.com/hashkeychain/mainnet/genesis.json"
+GENESIS_URL="https://hashkeychain.s3.ap-southeast-1.amazonaws.com/mainnet/genesis.json"
 # sync mode(full or snap)
 GETH_SYNC_MODE=full
 # gc mode(archive or full)
@@ -87,7 +85,7 @@ SEQUENCER_HTTP=https://mainnet.hsk.xyz
 # OP_NODE_LOG_LEVEL=Debug
 # l1 rpc url
 # node image
-NODE_IMAGE=us-docker.pkg.dev/oplabs-tools-artifacts/images/op-node:v1.14.1
+NODE_IMAGE=us-docker.pkg.dev/oplabs-tools-artifacts/images/op-node:v1.16.5
 
 L1_RPC=
 # l1 rpc kind(standard/basic/quicknode/alchemy/erigon)
@@ -98,9 +96,9 @@ L1_RPC_KIND=standard
 L1_BEACON=
 
 # node libp2p bootnodes dns/ip4
-P2P_STATIC="/dns/testnet-bootnodes.hsk.xyz/tcp/9003/p2p/16Uiu2HAmK91SZeGrr7Tv7hKBJsNcbVjzNtZBKmGzq5hLo5AtSoHa,/dns/testnet-bootnodes.hsk.xyz/tcp/9004/p2p/16Uiu2HAmTJHvcpkC8miMRhHr9ionQtEVMbCGshmU2nv4ir5ZA68j"
+P2P_STATIC="/dns/mainnet-bootnodes.hsk.xyz/tcp/31329/p2p/16Uiu2HAm8itEpr6DRkQhezSWS8WsAGfiLhzv2Y6KK1k2KVGv5PJQ,/dns/mainnet-bootnodes.hsk.xyz/tcp/31330/p2p/16Uiu2HAm79eNjZYakcTmsyifeMQykwArEd6bUU6EQgf3XvCmCKSY,/dns/mainnet-bootnodes.hsk.xyz/tcp/31331/p2p/16Uiu2HAm9WzPWe3szua51vyrj3dZsez89R3fGwAfMexE5568mEyP"
 # rollup config file url link
-ROLLUP_CONFIG_URL="https://operator-public.s3.us-west-2.amazonaws.com/hashkeychain/mainnet/rollup.json"
+ROLLUP_CONFIG_URL="https://hashkeychain.s3.ap-southeast-1.amazonaws.com/mainnet/rollup.json"
 
 ```
 
@@ -110,7 +108,7 @@ Create a `.env` file with the following content for HashKey Chain Testnet, repla
 
 ```bash
 # geth image
-GETH_IMAGE=us-docker.pkg.dev/oplabs-tools-artifacts/images/op-geth:v1.101603.1
+GETH_IMAGE=us-docker.pkg.dev/oplabs-tools-artifacts/images/op-geth:v1.101605.0
 # op-l2 geth bootnodes
 GETH_STATICNODES='[
     "enode://0492e74fb10579a3c53a327ee42dc70db35e7e0aebd73793a806afccb86b30acecb8fe9d024e06bb3fd154c678926d884df3ae696c71adcbf1339a5762e19c4d@testnet-bootnodes.hsk.xyz:30303",
@@ -132,7 +130,7 @@ SEQUENCER_HTTP=https://testnet.hsk.xyz
 # OP_NODE_LOG_LEVEL=Debug
 # l1 rpc url
 # node image
-NODE_IMAGE=us-docker.pkg.dev/oplabs-tools-artifacts/images/op-node:v1.14.1
+NODE_IMAGE=us-docker.pkg.dev/oplabs-tools-artifacts/images/op-node:v1.16.5
 
 L1_RPC=
 # l1 rpc kind(standard/basic/quicknode/alchemy/erigon)
