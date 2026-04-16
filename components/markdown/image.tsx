@@ -11,7 +11,7 @@ export default function Image({
   height = 350,
   ...props
 }: ComponentProps<"img">) {
-  if (!src) return null;
+  if (typeof src !== "string" || !src) return null;
   return (
     <NextImage
       src={src}
