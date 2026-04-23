@@ -30,6 +30,7 @@ export const ROUTES: EachRoute[] = [
     items: [
       { title: "Network Info", href: "/network-info" },
       { title: "Token Contracts", href: "/Token-Contracts" },
+      { title: "Contract Addresses", href: "/Contract-Addresses" },
       { title: "Tools", href: "/Tools", noLink: true,
         items: [
           { title: "Explorer", href: "/Explorer" },
